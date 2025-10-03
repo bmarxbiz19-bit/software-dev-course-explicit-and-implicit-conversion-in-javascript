@@ -21,12 +21,16 @@ Use console.log() to clearly show the before-and-after type conversions.
 
 let result = "5" - 2;
 console.log("The result is: " + result);
+/*Type coercion is taking place so no need to change anything*/
 
-let isValid = Boolean("false");
+let isValid = Boolean("true");
+/*Changed to "true" to maintain valid variable naming*/
 if (isValid) {
     console.log("This is valid!");
 }
+else (0);
 
-let age = "25";
+let age = Number("25");
+/*Conversion to number, else answer will be 255.*/
 let totalAge = age + 5;
 console.log("Total Age: " + totalAge);
